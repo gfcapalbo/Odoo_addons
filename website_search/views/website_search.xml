@@ -83,7 +83,7 @@
                             <input type="search" class="form-control"
                                 name="search" placeholder="Search word..."
                                 t-att-value="search or ''"/>
-                            <button t-attf-href="/search_results?{{keep_query('sorting', 'search_on_pages', 'search_on_blogposts', 'search_on_comments', 'search_on_customers', 'search_on_jobs', 'search_on_products', 'case_sensitive', search=search, search_advanced='0')}}" class="btn btn-default">Buscar</button>
+                            <button t-attf-href="/search_results?{{keep_query('sorting', 'search_on_pages', 'search_on_blogposts', 'search_on_comments', 'search_on_customers', 'search_on_jobs', 'search_on_products', 'case_sensitive', search=search, search_advanced='0')}}" class="btn btn-default">Search</button>
                             <a class="col-md-offset-1" t-attf-href="/search_advanced">Advanced search</a>
                         </div>
                         <div class="form-group col-md-8">
@@ -99,7 +99,7 @@
                             <input type="search" class="form-control"
                                 name="search" placeholder="Search word..."
                                 t-att-value="search or ''"/>
-                            <button t-attf-href="/search_results?{{keep_query('sorting', 'search_on_pages', 'search_on_blogposts', 'search_on_comments', 'search_on_customers', 'search_on_jobs', 'search_on_products', 'case_sensitive', search=search, search_advanced='1')}}" class="btn btn-default">Buscar</button>
+                            <button t-attf-href="/search_results?{{keep_query('sorting', 'search_on_pages', 'search_on_blogposts', 'search_on_comments', 'search_on_customers', 'search_on_jobs', 'search_on_products', 'case_sensitive', search=search, search_advanced='1')}}" class="btn btn-default">Search</button>
                         </div>
                         <t t-call="website_search.search_options"/>
                         <div class="form-group"/>
@@ -110,7 +110,7 @@
 <template id="search_options" name="Search Options">
                          <div class="col-md-8">
                             <ul class="nav-pills" style="list-style: none;">
-                                <li ><h5>Buscar en: </h5></li>
+                                <li ><h5>Search in: </h5></li>
                                 <li ><span><br/></span></li>
                                 <li >
                                     <a t-if="search_on_pages" class="btn btn-primary btn-xs" t-attf-href="/search_advanced?{{keep_query('search', 'tag_id', 'vertical_id', 'horizontal_id', 'solucion_id', 'country_id',  'sorting', 'search_on_blogposts', 'search_on_comments', 'search_on_customers', 'search_on_jobs', 'search_on_products', 'case_sensitive', search_on_pages='0')}}" title="Search on pages (active)">Page</a>

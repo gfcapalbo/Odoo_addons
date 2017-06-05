@@ -31,12 +31,12 @@ msgstr ""
 #. module: website_search
 #: view:website:website_search.search_form
 #: view:website:website_search.search_form_advanced
-msgid "Buscar"
+msgid "Search"
 msgstr ""
 
 #. module: website_search
 #: view:website:website_search.search_options
-msgid "Buscar en:"
+msgid "Search in:"
 msgstr ""
 
 #. module: website_search
